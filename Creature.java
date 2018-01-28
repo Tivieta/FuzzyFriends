@@ -17,7 +17,7 @@ class Creature {
 		//what body part do you want to change ?
 		//list parts:
 		
-	static Genome genonme = new Genome();
+	//static Genome genonme = new Genome();
 
 		System.err.println("Name: "+ name);
 		System.err.println(eye.toString());
@@ -55,7 +55,7 @@ class GeneSelector extends GeneHalf{
 class GeneCoDom extends GeneHalf{
 	char display;
 	boolean dominance = false;
-	char dom = 'Z'
+	char dom = 'Z';
 	GeneCoDom(String gene, char midway){
 		
 		super(gene);
@@ -66,7 +66,7 @@ class GeneCoDom extends GeneHalf{
 			hetero = false;
 		}else if ( left == dom || right == dom ){ //finding 'Z' dominating allele 
 			display = left;
-			break;
+			//break;
 
 		}else if((left == right ^ right == dom)){
 			hetero =true;
@@ -75,8 +75,8 @@ class GeneCoDom extends GeneHalf{
 	}
 		
 
-	}
 }
+
 
 class GeneHalf{ //"RR"
 	char left;
@@ -225,7 +225,7 @@ class Eye{
 	}
 }
 
-
+/*
 //Fur: color, type
 class Fur{
 
@@ -261,7 +261,7 @@ class Fur{
 	//toString
 }
 
-
+*/
 
 /*
 //mouth: size, type
